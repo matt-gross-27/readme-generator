@@ -7,8 +7,10 @@
 
 <a href = "#description"></a>
 ## Description
-README Generator is a command line app that helps you make a high quality readme more quickly
 
+README Generator is a command line app that helps you quickly make a high quality README.md, so you can spend more time developing and less time documenting.
+
+Clone this repo to use readme-generator on your machine.
 
 ## Table of Contents
   - [Description](#description)
@@ -37,7 +39,7 @@ README Generator is a command line app that helps you make a high quality readme
 
 <a href = "#license"></a>
 ## License
-MIT
+- MIT
 
 <a href = "questions"></a>
 ## Questions
