@@ -5,15 +5,28 @@ const deployedLink = (confirm, link) => {
   } else {
     return ``;
   }
-}
+};
+
+const listContributors = arr => {
+  let list = [];
+  for(i=0; i < arr.length -1; i++) {
+    let item = `[${arr[i].contributorGitHub}](https://github.com/${arr[i].contributorGitHub})`
+    list.push(item);
+  } if (list.length === 0) {
+    return "";
+  }
+  let literal = "- " + list.join(`
+- `);
+  return literal;
+};
 
 module.exports = (promptData) => {
   //destruct object for easier use
-  const { projectName, gitHub, email, description, confirmDeployed, deployedAppLink } = promptData;
+  const { projectName, gitHub, email, description, confirmDeployed, deployedAppLink, usage, installation, license, test, credits, guideLines } = promptData;
   return `# ${projectName}
+
 <a href = "#description"></a>
 ## Description
-
 ${description}
 ${deployedLink(confirmDeployed, deployedAppLink)}
 
@@ -21,30 +34,36 @@ ${deployedLink(confirmDeployed, deployedAppLink)}
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
+  - [Credits](#credits)
   - [License](#license)
   - [Tests](#tests)
+  - [Contributing Guide Lines](#contributing)
   - [Questions](#questions)
 
 <a href = "#installation"></a>
 ## Installation
-
+${installation}
 
 <a href = "#usage"></a>
 ## Usage
+${usage}
 
-
-<a href = "#contributing"></a>
-## Contributing
-
+<a href = "#credits"></a>
+## Credits
+- [${gitHub}](https://github.com/${gitHub})
+${listContributors(credits)}
 
 <a href = "#license"></a>
 ## License
+${license}
 
+<a href = "#contributing"></a>
+## Contributing Guide Lines
+${guideLines}
 
 <a href = "#tests"></a>
 ## Tests
-
+${test}
 
 <a href = "questions"></a>
 ## Questions

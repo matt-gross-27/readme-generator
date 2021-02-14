@@ -1,44 +1,49 @@
-# DOPE STUFF
+# T
+
 <a href = "#description"></a>
 ## Description
+T
 
-It makes making a readme easy and fun
-<br>
-### [Go To Deployed Application](http://www.google.com)
 
 ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
+  - [Credits](#credits)
   - [License](#license)
   - [Tests](#tests)
+  - [Contributing Guide Lines](#contributing)
   - [Questions](#questions)
 
 <a href = "#installation"></a>
 ## Installation
-
+T
 
 <a href = "#usage"></a>
 ## Usage
+T
 
-
-<a href = "#contributing"></a>
-## Contributing
+<a href = "#credits"></a>
+## Credits
+- [T](https://github.com/T)
 
 
 <a href = "#license"></a>
 ## License
+MIT
 
+<a href = "#contributing"></a>
+## Contributing Guide Lines
+T
 
 <a href = "#tests"></a>
 ## Tests
-
+T
 
 <a href = "questions"></a>
 ## Questions
-Feel free to reach out with any question you have about DOPE STUFF!
+Feel free to reach out with any question you have about T!
 
 ### Contact information:
-- GitHub: [matt-gross-27](https://www.github.com/matt-gross-27)
-- Email: [mbgross111@gmail.com](mailto:mbgross111@gmail.com)
+- GitHub: [T](https://www.github.com/T)
+- Email: [T](mailto:T)
