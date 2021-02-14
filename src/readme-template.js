@@ -7,6 +7,13 @@ const deployedLink = (confirm, link) => {
   }
 };
 
+const licenseBadge = choice => {
+return `<div style="position: absolute; top: 22px; right: 50px">
+
+![licence: ${choice}](https://img.shields.io/badge/license-${choice.split(' ').join('%20')}-blue)
+</div>`
+}
+
 const listContributors = arr => {
   let list = [];
   for(i=0; i < arr.length -1; i++) {
@@ -24,6 +31,8 @@ module.exports = (promptData) => {
   //destruct object for easier use
   const { projectName, gitHub, email, description, confirmDeployed, deployedAppLink, usage, installation, license, test, credits, guideLines } = promptData;
   return `# ${projectName}
+
+${licenseBadge(license)}
 
 <a href = "#description"></a>
 ## Description
